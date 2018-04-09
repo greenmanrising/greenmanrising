@@ -1,0 +1,391 @@
+@import 'stylesheets/reset.css';
+body {
+  width: 100%;
+  *zoom: 1;
+}
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+@font-face {
+  font-family: LiberationSans;
+  src: url('/assets/fonts/LiberationSans-Regular.ttf');
+}
+@font-face {
+  font-family: LiberationSans;
+  src: url('/assets/fonts/LiberationSans-Bold.ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: LiberationSans;
+  src: url('/assets/fonts/LiberationSans-Italic.ttf');
+  font-style: italic;
+}
+html {
+  position: relative;
+  height: auto;
+  min-height: 100%;
+}
+body {
+  width: 900px;
+  float: center;
+}
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
+b {
+  font-weight: bold;
+}
+i {
+  font-style: italic;
+}
+blockquote {
+  font-style: italic;
+}
+a:link {
+  color: #007D25;
+  text-decoration: underline;
+}
+a:visited {
+  color: #007D25;
+  text-decoration: underline;
+}
+a:focus {
+  color: #1F4F82;
+  text-decoration: underline;
+}
+a:hover {
+  color: #B22222;
+  text-decoration: underline;
+}
+a:active {
+  color: #808080;
+  text-decoration: underline;
+}
+header {
+  display: inline;
+  float: left;
+  width: 97.91666667%;
+  margin: 0 1.04166667%;
+  padding-top: 0.5em;
+  background-color: #ffffff;
+}
+header h1 {
+  color: #000000;
+  font-family: LiberationSerif, Arial, 'Serif', serif;
+  font-size: 2.8em;
+  font-weight: bold;
+  font-style: italic;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+header p {
+  color: #5A5853;
+  font-family: LiberationSans, Arial, 'Sans Serif', sans-serif;
+  font-size: 1em;
+  font-variant: normal;
+  line-height: 1.21em;
+  padding-bottom: 0.7em;
+}
+.header-image-right {
+  float: right;
+}
+#logo {
+  display: inline;
+  float: left;
+  width: 20.41666667%;
+  margin: 0 1.04166667%;
+}
+#logo img {
+  border-radius: 1.5em;
+}
+#header-text {
+  display: inline;
+  float: left;
+  width: 47.91666667%;
+  margin: 0 1.04166667%;
+}
+#breadcrumb {
+  display: inline;
+  float: left;
+  width: 97.91666667%;
+  margin: 0 1.04166667%;
+  color: #000000;
+  font-family: LiberationSans, Arial, 'Sans Serif', sans-serif;
+  font-size: 0.8em;
+  font-variant: normal;
+  font-style: italic;
+  font-weight: bold;
+  color: #808080;
+  border-bottom-color: #a7a7a7;
+  border-bottom-style: dotted;
+  border-bottom-width: 1px;
+  margin-bottom: 10px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+  margin-left: 0;
+  width: 99%;
+}
+#breadcrumb li {
+  display: inline;
+}
+#breadcrumb li + li:before {
+  content: url("/assets/site-images/breadcrumb_arrow.gif");
+  margin: 0 6px;
+}
+.header-nav {
+  display: inline;
+  float: left;
+  width: 97.91666667%;
+  margin: 0 1.04166667%;
+  border-radius: 0.6em;
+  background-color: black;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+.header-nav ul {
+  display: inline;
+  float: left;
+  width: 97.91666667%;
+  margin: 0 1.04166667%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0;
+}
+.header-nav ul li {
+  display: inline;
+  margin-left: 20em;
+  padding-right: 1em;
+  color: #ffffff;
+  font-size: 1em;
+  margin: 0 auto;
+  padding: 0.5em 0.5em 0.5em;
+}
+.header-nav ul a {
+  color: #5A5853;
+  font-family: LiberationSans, Arial, 'Sans Serif', sans-serif;
+  font-size: 1em;
+  font-variant: normal;
+  line-height: 1.21em;
+  padding-bottom: 0.7em;
+  padding-bottom: 0em;
+  padding-left: 0em;
+  padding-right: 0em;
+  padding-top: 0em;
+  text-decoration: none;
+  line-height: 1.2em;
+}
+.header-nav ul a:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+.header-nav ul a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+.header-nav ul a:focus {
+  color: #1F4F82;
+  text-decoration: underline;
+}
+.header-nav ul a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.header-nav ul a:active {
+  color: #808080;
+  text-decoration: underline;
+}
+.header-nav ul .active a {
+  color: #86C75C;
+}
+#content {
+  display: inline;
+  float: left;
+  width: 97.91666667%;
+  margin: 0 1.04166667%;
+  margin-left: 2.70833333%;
+}
+#content p {
+  color: #5A5853;
+  font-family: LiberationSans, Arial, 'Sans Serif', sans-serif;
+  font-size: 1em;
+  font-variant: normal;
+  line-height: 1.21em;
+  padding-bottom: 0.7em;
+  padding-left: 1em;
+}
+#content h2 {
+  color: #000000;
+  font-family: LiberationSans, Arial, 'Sans Serif', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+}
+#content h3 {
+  color: #000000;
+  font-family: LiberationSans, Arial, 'Sans Serif', sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+}
+#content h4 {
+  color: #5A5853;
+  font-family: LiberationSans, Arial, 'Sans Serif', sans-serif;
+  font-size: 1em;
+  font-variant: normal;
+  line-height: 1.21em;
+  padding-bottom: 0.7em;
+  font-weight: bold;
+}
+#content li {
+  color: #5A5853;
+  font-family: LiberationSans, Arial, 'Sans Serif', sans-serif;
+  font-size: 1em;
+  font-variant: normal;
+  padding-bottom: 0.7em;
+  line-height: 1.21em;
+  padding-bottom: 0.2em;
+}
+#content img {
+  float: right;
+  padding: 0.2em;
+}
+#content ul {
+  list-style-type: disc;
+  padding-bottom: 1em;
+  margin-left: 2em;
+}
+.iframemap {
+  display: inline;
+  float: left;
+  width: 97.91666667%;
+  margin: 0 1.04166667%;
+  height: 350px;
+}
+aside {
+  display: inline;
+  float: left;
+  width: 27.08333333%;
+  margin: 0 1.04166667%;
+  float: right;
+  border-color: #a7a7a7;
+  border-style: dotted;
+  border-width: 1px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+aside p {
+  color: #5A5853;
+  font-family: LiberationSans, Arial, 'Sans Serif', sans-serif;
+  font-size: 1em;
+  font-variant: normal;
+  line-height: 1.21em;
+  padding-bottom: 0.7em;
+  padding-top: 0.5em;
+  padding-left: 0.8em;
+}
+aside img {
+  width: 100%;
+  margin-bottom: 10px;
+  float: left;
+}
+.outline-text-5 {
+  overflow: auto;
+}
+footer {
+  display: inline;
+  float: left;
+  width: 97.91666667%;
+  margin: 0 1.04166667%;
+  color: #000000;
+  font-family: LiberationSans, Arial, 'Sans Serif', sans-serif;
+  font-size: 0.8em;
+  font-variant: normal;
+  border-radius: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #99CC00;
+  background-color: #EEFEE6;
+  background-image: url("/assets/site-images/backgrounds/farmer.png");
+}
+footer .footer-left {
+  display: inline;
+  float: left;
+  width: 47.91666667%;
+  margin: 0 1.04166667%;
+  text-align: left;
+}
+footer .footer-right {
+  display: inline;
+  float: left;
+  width: 47.91666667%;
+  margin: 0 1.04166667%;
+  text-align: center;
+}
+footer address {
+  padding-bottom: 30px;
+}
+@media screen and (max-width: 899px) {
+  body {
+    width: 90%;
+  }
+  #logo {
+    display: inline;
+    float: left;
+    width: 31.25%;
+    margin: 0 1.04166667%;
+  }
+}
+@media screen and (max-width: 599px) {
+  body {
+    width: 90%;
+  }
+  aside {
+    display: inline;
+    float: left;
+    width: 89.58333333%;
+    margin: 0 1.04166667%;
+  }
+  #content img {
+    width: 30%;
+    margin-right: 60%;
+  }
+  #logo {
+    display: inline;
+    float: left;
+    width: 89.58333333%;
+    margin: 0 1.04166667%;
+  }
+  .header-image-right {
+    float: none;
+  }
+  #header-text {
+    display: inline;
+    float: left;
+    width: 89.58333333%;
+    margin: 0 1.04166667%;
+  }
+  #logo {
+    display: inline;
+    float: left;
+    width: 89.58333333%;
+    margin: 0 1.04166667%;
+  }
+}
